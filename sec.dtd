@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT PurchaseOrder(VendorAddress, ShiptoAddress, items, TotalAmount, Terms)>
+
+<!ELEMENT VendorAddress(Name, Street, City, PhoneNumber)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Street (#PCDATA)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT PhoneNumber (#PCDATA)>
+
+<!ELEMENT ShiptoAddress(Name, Street, City, PhoneNumber)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Street (#PCDATA)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT PhoneNumber (#PCDATA)>
+
+<!ELEMENT items (#PCDATA)>
+<!ELEMENT TotalAmount (#PCDATA)>
+<!ELEMENT Terms (#PCDATA)>
+
+<!ATTLIST PurchaseOrder Number CDATA #REQUIRED>
+<!ATTLIST PurchaseOrder Date CDATA #REQUIRED>
